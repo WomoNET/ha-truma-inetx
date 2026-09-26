@@ -1,0 +1,602 @@
+{
+  "0x0101": [
+    {
+      "tn": "ErrorReset",
+      "pn": "ErrCode",
+      "type": 202,
+      "avail": 1,
+      "v": []
+    },
+    {
+      "tn": "Identify",
+      "pn": "FuncID",
+      "type": 1,
+      "min": 0,
+      "max": 65535,
+      "avail": 1,
+      "v": 96
+    },
+    {
+      "tn": "Identify",
+      "pn": "HwMaj",
+      "type": 1,
+      "min": 0,
+      "max": 255,
+      "avail": 1,
+      "v": 3
+    },
+    {
+      "tn": "Identify",
+      "pn": "HwMin",
+      "type": 1,
+      "min": 0,
+      "max": 255,
+      "avail": 1,
+      "v": 4
+    },
+    {
+      "tn": "Identify",
+      "pn": "Name",
+      "type": 4,
+      "avail": 1,
+      "perm": 0,
+      "v": "iNet X Panel"
+    },
+    {
+      "tn": "Identify",
+      "pn": "SerialNr",
+      "type": 4,
+      "avail": 1,
+      "perm": 0,
+      "v": "IPBRTEU-A-00000001"
+    },
+    {
+      "tn": "Identify",
+      "pn": "SupID",
+      "type": 1,
+      "min": 0,
+      "max": 65535,
+      "avail": 1,
+      "perm": 0,
+      "v": 17943
+    },
+    {
+      "tn": "Identify",
+      "pn": "Supplier",
+      "type": 4,
+      "avail": 1,
+      "v": "Truma"
+    },
+    {
+      "tn": "Identify",
+      "pn": "SwBdNr",
+      "type": 1,
+      "min": 0,
+      "max": 65535,
+      "avail": 1,
+      "perm": 0,
+      "v": 1
+    },
+    {
+      "tn": "Identify",
+      "pn": "SwBgFx",
+      "type": 1,
+      "min": 0,
+      "max": 255,
+      "avail": 1,
+      "perm": 0,
+      "v": 27
+    },
+    {
+      "tn": "Identify",
+      "pn": "SwMaj",
+      "type": 1,
+      "min": 0,
+      "max": 255,
+      "avail": 1,
+      "perm": 0,
+      "v": 3
+    },
+    {
+      "tn": "Identify",
+      "pn": "SwMin",
+      "type": 1,
+      "min": 0,
+      "max": 255,
+      "avail": 1,
+      "perm": 0,
+      "v": 4
+    },
+    {
+      "tn": "Identify",
+      "pn": "Type",
+      "type": 103,
+      "avail": 1,
+      "perm": 0,
+      "v": 1
+    },
+    {
+      "tn": "Identify",
+      "pn": "VarID",
+      "type": 1,
+      "min": 0,
+      "max": 65535,
+      "avail": 1,
+      "perm": 0,
+      "v": 0
+    },
+    {
+      "tn": "PowerMgmt",
+      "pn": "PwrMode",
+      "type": 102,
+      "avail": 1,
+      "v": 3
+    },
+    {
+      "tn": "RoomClimate",
+      "pn": "Active",
+      "type": 107,
+      "avail": 1,
+      "v": 0
+    },
+    {
+      "tn": "RoomClimate",
+      "pn": "Mode",
+      "type": 2,
+      "enum": [
+        {
+          "n": "Off",
+          "v": 0,
+          "a": 1
+        },
+        {
+          "n": "ACC",
+          "v": 1,
+          "a": 0
+        },
+        {
+          "n": "Cooling",
+          "v": 2,
+          "a": 0
+        },
+        {
+          "n": "Heating",
+          "v": 3,
+          "a": 1
+        },
+        {
+          "n": "Ventilating",
+          "v": 5,
+          "a": 1
+        }
+      ],
+      "avail": 1,
+      "v": 0
+    },
+    {
+      "tn": "RoomClimate",
+      "pn": "TgtTemp",
+      "type": 10,
+      "min": 160,
+      "max": 300,
+      "avail": 1,
+      "v": 300
+    },
+    {
+      "tn": "System",
+      "pn": "DemoMode",
+      "type": 2,
+      "enum": [
+        {
+          "n": "Off",
+          "v": 0,
+          "a": 1
+        },
+        {
+          "n": "On",
+          "v": 1,
+          "a": 1
+        },
+        {
+          "n": "On and configured",
+          "v": 2,
+          "a": 1
+        }
+      ],
+      "avail": 1,
+      "v": 0
+    },
+    {
+      "tn": "System",
+      "pn": "FactoryReset",
+      "type": 104,
+      "avail": 1,
+      "v": 0
+    },
+    {
+      "tn": "System",
+      "pn": "FlameStatus",
+      "type": 105,
+      "avail": 1,
+      "perm": 0,
+      "v": 0
+    },
+    {
+      "tn": "System",
+      "pn": "Plugged",
+      "type": 104,
+      "avail": 1,
+      "perm": 0,
+      "v": 0
+    },
+    {
+      "tn": "System",
+      "pn": "Search",
+      "type": 104,
+      "avail": 1,
+      "v": 0
+    },
+    {
+      "tn": "Temperature",
+      "pn": "ExternalRaw",
+      "type": 10,
+      "min": -32768,
+      "max": 32767,
+      "avail": 0,
+      "perm": 0,
+      "v": -299
+    },
+    {
+      "tn": "Temperature",
+      "pn": "Internal",
+      "type": 10,
+      "min": -32768,
+      "max": 32767,
+      "avail": 1,
+      "perm": 0,
+      "v": 201
+    },
+    {
+      "tn": "Temperature",
+      "pn": "InternalRaw",
+      "type": 10,
+      "min": -32768,
+      "max": 32767,
+      "avail": 0,
+      "perm": 0,
+      "v": -299
+    },
+    {
+      "tn": "Temperature",
+      "pn": "InternalSource",
+      "type": 1,
+      "min": 0,
+      "max": 255,
+      "avail": 1,
+      "perm": 0,
+      "v": 1
+    }
+  ],
+  "0x0201": [
+    {
+      "tn": "ACCAirHeating",
+      "pn": "Mode",
+      "type": 1,
+      "min": 1,
+      "max": 1,
+      "avail": 1,
+      "perm": 0,
+      "v": 1
+    },
+    {
+      "tn": "AirCirculation",
+      "pn": "Active",
+      "type": 105,
+      "avail": 1,
+      "v": 0
+    },
+    {
+      "tn": "AirCirculation",
+      "pn": "FanLevel",
+      "type": 1,
+      "min": 0,
+      "max": 10,
+      "avail": 1,
+      "v": 0
+    },
+    {
+      "tn": "AirCirculation",
+      "pn": "Location",
+      "type": 109,
+      "avail": 1,
+      "v": 1
+    },
+    {
+      "tn": "AirHeating",
+      "pn": "Active",
+      "type": 105,
+      "avail": 1,
+      "v": 0
+    },
+    {
+      "tn": "AirHeating",
+      "pn": "Location",
+      "type": 109,
+      "avail": 1,
+      "v": 1
+    },
+    {
+      "tn": "AirHeating",
+      "pn": "Mode",
+      "type": 2,
+      "enum": [
+        {
+          "n": "Fast",
+          "v": 0,
+          "a": 1
+        },
+        {
+          "n": "Comfort",
+          "v": 1,
+          "a": 1
+        }
+      ],
+      "avail": 1,
+      "v": 1
+    },
+    {
+      "tn": "AirHeating",
+      "pn": "Temp",
+      "type": 10,
+      "min": -400,
+      "max": 600,
+      "avail": 1,
+      "perm": 0,
+      "v": 195
+    },
+    {
+      "tn": "AirHeating",
+      "pn": "TgtTemp",
+      "type": 10,
+      "min": 50,
+      "max": 300,
+      "avail": 1,
+      "v": 210
+    },
+    {
+      "tn": "EnergySrc",
+      "pn": "GasLevel",
+      "type": 2,
+      "enum": [
+        {
+          "n": "Gas off",
+          "v": 0,
+          "a": 1
+        },
+        {
+          "n": "Gas on",
+          "v": 1,
+          "a": 1
+        }
+      ],
+      "avail": 1,
+      "v": 1
+    },
+    {
+      "tn": "EnergySrc",
+      "pn": "NeedsEnergySrc",
+      "type": 104,
+      "avail": 1,
+      "perm": 0,
+      "v": 1
+    },
+    {
+      "tn": "ErrorReset",
+      "pn": "ErrCode",
+      "type": 202,
+      "avail": 1,
+      "v": []
+    },
+    {
+      "tn": "ErrorReset",
+      "pn": "Req",
+      "type": 104,
+      "avail": 1,
+      "perm": 0,
+      "v": 0
+    },
+    {
+      "tn": "ErrorReset",
+      "pn": "ResetTime",
+      "type": 18,
+      "min": 0,
+      "max": 60,
+      "avail": 1,
+      "perm": 0,
+      "v": 60
+    },
+    {
+      "tn": "ErrorReset",
+      "pn": "WaitTime",
+      "type": 18,
+      "min": 0,
+      "max": 900,
+      "avail": 0,
+      "perm": 0,
+      "v": 900
+    },
+    {
+      "tn": "Identify",
+      "pn": "FuncID",
+      "type": 1,
+      "min": 0,
+      "max": 65535,
+      "avail": 1,
+      "v": 832
+    },
+    {
+      "tn": "Identify",
+      "pn": "IID",
+      "type": 100,
+      "avail": 1,
+      "perm": 0,
+      "v": 2
+    },
+    {
+      "tn": "Identify",
+      "pn": "Name",
+      "type": 4,
+      "avail": 1,
+      "perm": 0,
+      "v": "Combi 6"
+    },
+    {
+      "tn": "Identify",
+      "pn": "SerialNr",
+      "type": 4,
+      "avail": 1,
+      "perm": 0,
+      "v": "CBG06EU-E-00000002"
+    },
+    {
+      "tn": "Identify",
+      "pn": "SupID",
+      "type": 1,
+      "min": 0,
+      "max": 65535,
+      "avail": 1,
+      "perm": 0,
+      "v": 17943
+    },
+    {
+      "tn": "Identify",
+      "pn": "Supplier",
+      "type": 4,
+      "avail": 1,
+      "v": "Truma"
+    },
+    {
+      "tn": "Identify",
+      "pn": "SwBdNr",
+      "type": 1,
+      "min": 0,
+      "max": 65535,
+      "avail": 1,
+      "perm": 0,
+      "v": 1
+    },
+    {
+      "tn": "Identify",
+      "pn": "SwBgFx",
+      "type": 1,
+      "min": 0,
+      "max": 255,
+      "avail": 1,
+      "perm": 0,
+      "v": 1
+    },
+    {
+      "tn": "Identify",
+      "pn": "SwMaj",
+      "type": 1,
+      "min": 0,
+      "max": 255,
+      "avail": 1,
+      "perm": 0,
+      "v": 2
+    },
+    {
+      "tn": "Identify",
+      "pn": "SwMin",
+      "type": 1,
+      "min": 0,
+      "max": 255,
+      "avail": 1,
+      "perm": 0,
+      "v": 0
+    },
+    {
+      "tn": "Identify",
+      "pn": "Type",
+      "type": 103,
+      "avail": 1,
+      "perm": 0,
+      "v": 2
+    },
+    {
+      "tn": "Identify",
+      "pn": "VarID",
+      "type": 1,
+      "min": 0,
+      "max": 65535,
+      "avail": 1,
+      "perm": 0,
+      "v": 35
+    },
+    {
+      "tn": "PowerMgmt",
+      "pn": "PwrMode",
+      "type": 102,
+      "avail": 1,
+      "v": 3
+    },
+    {
+      "tn": "WaterHeating",
+      "pn": "Active",
+      "type": 105,
+      "avail": 1,
+      "v": 0
+    },
+    {
+      "tn": "WaterHeating",
+      "pn": "FasterHeatingMode",
+      "type": 104,
+      "avail": 0,
+      "v": 0
+    },
+    {
+      "tn": "WaterHeating",
+      "pn": "FasterHeatingModeTime",
+      "type": 18,
+      "min": 0,
+      "max": 2400,
+      "avail": 0,
+      "perm": 0,
+      "v": 0
+    },
+    {
+      "tn": "WaterHeating",
+      "pn": "Mode",
+      "type": 2,
+      "enum": [
+        {
+          "n": "40",
+          "v": 0,
+          "a": 1
+        },
+        {
+          "n": "60",
+          "v": 1,
+          "a": 1
+        },
+        {
+          "n": "70",
+          "v": 2,
+          "a": 1
+        }
+      ],
+      "avail": 1,
+      "v": 1
+    },
+    {
+      "tn": "WaterHeating",
+      "pn": "Temp",
+      "type": 10,
+      "min": -400,
+      "max": 1300,
+      "avail": 1,
+      "perm": 0,
+      "v": 352
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+[project]
+name = "ha-truma-inetx"
+version = "0.1.0"
+description = "Home Assistant integration for the Truma iNet X panel over Bluetooth"
+license = "GPL-3.0-or-later"
+requires-python = ">=3.14"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.14"
+check_untyped_defs = true
+ignore_missing_imports = true
+
+[tool.coverage.run]
+source = ["custom_components.truma_inetx"]
+
+[tool.ruff]
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["B", "D", "E", "F", "I", "PL", "RUF", "SIM", "UP", "W"]
+ignore = ["D203", "D213", "E501", "PLR0913", "PLR2004"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["D", "PLR2004"]
+
+[tool.ruff.lint.isort]
+force-sort-within-sections = true
+known-first-party = ["custom_components", "tests"]
+combine-as-imports = true

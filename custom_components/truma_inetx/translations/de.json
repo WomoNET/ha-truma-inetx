@@ -1,0 +1,129 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "description": "Wähle das iNet X Panel, mit dem gekoppelt werden soll.",
+        "data": {
+          "local_name": "Panel"
+        }
+      },
+      "pair": {
+        "title": "{name} koppeln",
+        "description": "Home Assistant muss einmalig mit dem Panel gekoppelt werden.\n\n1. Schließe die Truma iNet X App auf Smartphones und Tablets in der Nähe.\n2. Starte am iNet X Panel das Koppeln eines neuen Bluetooth-Geräts, wie für die Truma App.\n3. Wähle **Absenden**, solange das Panel auf ein Gerät wartet.\n\nDas Koppeln dauert meist weniger als eine Minute."
+      }
+    },
+    "progress": {
+      "pairing": "Kopple mit {name}. Lass das Panel im Kopplungsmodus, bis dieser Schritt abgeschlossen ist."
+    },
+    "error": {
+      "not_found": "Das Panel wurde nicht gefunden. Stelle sicher, dass es eingeschaltet und in Reichweite eines Bluetooth-Adapters oder -Proxys ist.",
+      "pairing_failed": "Das Koppeln ist fehlgeschlagen. Starte den Kopplungsmodus am Panel erneut und versuche es noch einmal.",
+      "no_response": "Das Panel wurde gekoppelt, antwortet aber nicht. Schließe die Truma App auf anderen Geräten und versuche es noch einmal.",
+      "unknown": "Unerwarteter Fehler, Details stehen im Log."
+    },
+    "abort": {
+      "already_configured": "Dieses Panel ist bereits eingerichtet.",
+      "already_in_progress": "Das Koppeln mit diesem Panel läuft bereits.",
+      "no_devices_found": "Kein iNet X Panel in Reichweite.",
+      "not_supported": "Dieses Gerät ist kein iNet X Panel.",
+      "reauth_successful": "Das Panel ist wieder gekoppelt."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "flame": {
+        "name": "Flamme"
+      }
+    },
+    "climate": {
+      "room_climate": {
+        "name": "Raumklima"
+      }
+    },
+    "fan": {
+      "ventilation": {
+        "name": "Lüftung"
+      }
+    },
+    "select": {
+      "diesel": {
+        "name": "Diesel",
+        "state": {
+          "diesel_off": "Aus",
+          "diesel_on": "Ein"
+        }
+      },
+      "electric_level": {
+        "name": "Elektroheizung",
+        "state": {
+          "electric_off": "Aus",
+          "900w": "900 W",
+          "1800w": "1800 W"
+        }
+      },
+      "gas": {
+        "name": "Gas",
+        "state": {
+          "gas_off": "Aus",
+          "gas_on": "Ein"
+        }
+      },
+      "heating_mode": {
+        "name": "Heizmodus",
+        "state": {
+          "comfort": "Komfort",
+          "fast": "Schnell"
+        }
+      }
+    },
+    "sensor": {
+      "panel_temperature": {
+        "name": "Paneltemperatur"
+      },
+      "room_temperature": {
+        "name": "Raumtemperatur"
+      },
+      "water_temperature": {
+        "name": "Wassertemperatur"
+      }
+    },
+    "water_heater": {
+      "water_heater": {
+        "name": "Warmwasser",
+        "state": {
+          "off": "Aus",
+          "40": "40 °C",
+          "60": "60 °C",
+          "70": "70 °C"
+        }
+      }
+    }
+  },
+  "exceptions": {
+    "connection_failed": {
+      "message": "Verbindung zum Panel fehlgeschlagen: {error}"
+    },
+    "not_connected": {
+      "message": "Das Panel ist nicht verbunden."
+    },
+    "panel_not_found": {
+      "message": "{name} ist nicht in Reichweite eines Bluetooth-Adapters oder -Proxys."
+    },
+    "unsupported_hvac_mode": {
+      "message": "Das Panel bietet den Modus {mode} nicht an."
+    },
+    "unsupported_operation_mode": {
+      "message": "Die Heizung bietet die Warmwasserstufe {mode} nicht an."
+    },
+    "unsupported_option": {
+      "message": "Die Option {option} ist nicht verfügbar."
+    },
+    "water_not_ready": {
+      "message": "Die Heizung hat nicht gemeldet, dass das Warmwasser bereit ist, daher wurde die Stufe nicht geändert."
+    },
+    "write_failed": {
+      "message": "{parameter} konnte nicht gesetzt werden: {error}"
+    }
+  }
+}

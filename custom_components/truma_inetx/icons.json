@@ -1,0 +1,31 @@
+{
+  "entity": {
+    "binary_sensor": {
+      "flame": {
+        "default": "mdi:fire-off",
+        "state": {
+          "on": "mdi:fire"
+        }
+      }
+    },
+    "fan": {
+      "ventilation": {
+        "default": "mdi:fan"
+      }
+    },
+    "select": {
+      "diesel": {
+        "default": "mdi:fuel"
+      },
+      "electric_level": {
+        "default": "mdi:lightning-bolt"
+      },
+      "gas": {
+        "default": "mdi:gas-cylinder"
+      },
+      "heating_mode": {
+        "default": "mdi:radiator"
+      }
+    }
+  }
+}

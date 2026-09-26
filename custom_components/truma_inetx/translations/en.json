@@ -1,0 +1,129 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "description": "Select the iNet X panel to pair with.",
+        "data": {
+          "local_name": "Panel"
+        }
+      },
+      "pair": {
+        "title": "Pair {name}",
+        "description": "Home Assistant has to be paired with the panel once.\n\n1. Close the Truma iNet X app on phones and tablets nearby.\n2. On the iNet X panel, start pairing a new Bluetooth device, as you would for the Truma app.\n3. While the panel is waiting for a device, select **Submit**.\n\nPairing usually takes less than a minute."
+      }
+    },
+    "progress": {
+      "pairing": "Pairing with {name}. Keep the panel in pairing mode until this step completes."
+    },
+    "error": {
+      "not_found": "The panel was not found. Make sure it is switched on and in range of a Bluetooth adapter or proxy.",
+      "pairing_failed": "Pairing failed. Start pairing mode on the panel again and retry.",
+      "no_response": "The panel paired but did not answer. Close the Truma app on other devices and retry.",
+      "unknown": "Unexpected error, see the log for details."
+    },
+    "abort": {
+      "already_configured": "This panel is already configured.",
+      "already_in_progress": "Pairing with this panel is already in progress.",
+      "no_devices_found": "No iNet X panel is in range.",
+      "not_supported": "This device is not an iNet X panel.",
+      "reauth_successful": "The panel is paired again."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "flame": {
+        "name": "Flame"
+      }
+    },
+    "climate": {
+      "room_climate": {
+        "name": "Room climate"
+      }
+    },
+    "fan": {
+      "ventilation": {
+        "name": "Ventilation"
+      }
+    },
+    "select": {
+      "diesel": {
+        "name": "Diesel",
+        "state": {
+          "diesel_off": "Off",
+          "diesel_on": "On"
+        }
+      },
+      "electric_level": {
+        "name": "Electric heating",
+        "state": {
+          "electric_off": "Off",
+          "900w": "900 W",
+          "1800w": "1800 W"
+        }
+      },
+      "gas": {
+        "name": "Gas",
+        "state": {
+          "gas_off": "Off",
+          "gas_on": "On"
+        }
+      },
+      "heating_mode": {
+        "name": "Heating mode",
+        "state": {
+          "comfort": "Comfort",
+          "fast": "Fast"
+        }
+      }
+    },
+    "sensor": {
+      "panel_temperature": {
+        "name": "Panel temperature"
+      },
+      "room_temperature": {
+        "name": "Room temperature"
+      },
+      "water_temperature": {
+        "name": "Water temperature"
+      }
+    },
+    "water_heater": {
+      "water_heater": {
+        "name": "Hot water",
+        "state": {
+          "off": "Off",
+          "40": "40 °C",
+          "60": "60 °C",
+          "70": "70 °C"
+        }
+      }
+    }
+  },
+  "exceptions": {
+    "connection_failed": {
+      "message": "Could not connect to the panel: {error}"
+    },
+    "not_connected": {
+      "message": "The panel is not connected."
+    },
+    "panel_not_found": {
+      "message": "{name} is not in range of a Bluetooth adapter or proxy."
+    },
+    "unsupported_hvac_mode": {
+      "message": "The panel does not offer the mode {mode}."
+    },
+    "unsupported_operation_mode": {
+      "message": "The heater does not offer the hot water level {mode}."
+    },
+    "unsupported_option": {
+      "message": "The option {option} is not available."
+    },
+    "water_not_ready": {
+      "message": "The heater did not report that hot water is ready, so the level was not changed."
+    },
+    "write_failed": {
+      "message": "Could not set {parameter}: {error}"
+    }
+  }
+}
